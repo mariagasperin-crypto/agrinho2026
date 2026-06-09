@@ -1,1 +1,277 @@
+/* ===== RESET BÁSICO E CONFIGURAÇÕES GLOBAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5fcf5;
+    color: #1a3b1a;
+    transition: all 0.3s ease;
+}
+
+/* Container para alinhar conteúdo */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background: linear-gradient(135deg, #2e6b2e, #1e4a1e);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 4px solid #ffd966;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* ===== MENU DE NAVEGAÇÃO ===== */
+nav {
+    background-color: #1e4a1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1.2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd966;
+}
+
+/* ===== SEÇÕES PRINCIPAIS ===== */
+section {
+    margin: 2.5rem 0;
+    background: white;
+    padding: 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2e6b2e;
+    margin-bottom: 1rem;
+    border-left: 5px solid #ffd966;
+    padding-left: 15px;
+}
+
+.destaque {
+    background-color: #fff3cd;
+    padding: 0.2rem 0.4rem;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* ===== TABELA RESPONSIVA ===== */
+.tabela-responsiva {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #c8e6c8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e6b2e;
+    color: white;
+}
+
+.verde {
+    background-color: #d4edd4;
+    font-weight: bold;
+}
+
+/* ===== CALCULADORA ===== */
+.calc-card {
+    background-color: #eef7ee;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: 1.5rem 0;
+}
+
+.campo {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0d9b0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.resultado {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #ffd966;
+}
+
+.dica {
+    font-size: 0.85rem;
+    color: #4a6e4a;
+    margin-top: 0.8rem;
+    font-style: italic;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #1a3b1a;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ===== BOTÕES DE ACESSIBILIDADE ===== */
+.acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.acessibilidade button {
+    background-color: #2e6b2e;
+    font-size: 1rem;
+    padding: 6px 12px;
+    margin: 0;
+}
+
+.acessibilidade button:hover {
+    background-color: #1e4a1e;
+}
+
+/* ===== ALTO CONTRASTE (ATIVADO PELO JS) ===== */
+body.alto-contraste {
+    background-color: black;
+    color: #ffff00;
+}
+
+body.alto-contraste header,
+body.alto-contraste nav,
+body.alto-contraste footer {
+    background-color: #111;
+    border-color: yellow;
+}
+
+body.alto-contraste section {
+    background-color: #222;
+    border: 2px solid yellow;
+}
+
+body.alto-contraste .calc-card {
+    background-color: #111;
+    border: 1px solid yellow;
+}
+
+body.alto-contraste button {
+    background-color: yellow;
+    color: black;
+}
+
+body.alto-contraste a {
+    color: yellow;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul li {
+        margin: 0 0.8rem;
+    }
+    
+    section {
+        padding: 1.2rem;
+    }
+    
+    .acessibilidade {
+        bottom: 12px;
+        right: 12px;
+    }
+    
+    .acessibilidade button {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}
