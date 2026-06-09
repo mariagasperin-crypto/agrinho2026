@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Raiz e Futuro | Agricultura Familiar Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header>
+        <div class="container">
+            <h1>🌱 Raiz e Futuro</h1>
+            <p class="tagline">Tradição que alimenta, inovação que preserva</p>
+        </div>
+    </header>
+
+    <!-- ==================== MENU DE NAVEGAÇÃO ==================== -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre o tema</a></li>
+                <li><a href="#solucoes">Soluções sustentáveis</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main>
+        <div class="container">
+
+            <!-- SEÇÃO 1: SOBRE O TEMA -->
+            <section id="sobre">
+                <h2>🌾 Agricultura Familiar</h2>
+                <article>
+                    <p>A agricultura familiar é responsável por <strong>70% dos alimentos que chegam à mesa dos brasileiros</strong>. Ela une:</p>
+                    <ul>
+                        <li>✅ <strong>Segurança alimentar</strong> – produção diversificada e saudável</li>
+                        <li>✅ <strong>Preservação ambiental</strong> – menos agrotóxicos e maior cuidado com o solo</li>
+                        <li>✅ <strong>Valorização do trabalho no campo</strong> – geração de empregos no meio rural</li>
+                    </ul>
+                    <p>O grande problema que enfrentamos hoje é: <span class="destaque">o transporte de alimentos de longa distância</span> aumenta a emissão de CO₂ e enfraquece a economia local. <strong>Raiz e Futuro</strong> mostra que consumir da agricultura familiar perto de você é um ato de sustentabilidade!</p>
+                </article>
+            </section>
+
+            <!-- SEÇÃO 2: SOLUÇÕES SUSTENTÁVEIS (com tabela) -->
+            <section id="solucoes">
+                <h2>💡 Soluções sustentáveis</h2>
+                <p>Comparação entre o modelo convencional (longa distância) e o modelo da agricultura familiar local:</p>
+                
+                <!-- TABELA COMPARATIVA -->
+                <div class="tabela-responsiva">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Critério</th>
+                                <th>Convencional (longa distância)</th>
+                                <th>Agricultura familiar local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>🌍 Emissão de CO₂</td><td>Alta (caminhões, aviões)</td><td class="verde">Baixa ou zero</td></tr>
+                            <tr><td>💧 Uso de água</td><td>Muitas vezes excessivo</td><td class="verde">Manejo consciente</td></tr>
+                            <tr><td>🌿 Agrotóxicos</td><td>Uso frequente</td><td class="verde">Baixo ou orgânico</td></tr>
+                            <tr><td>👨‍🌾 Apoio ao pequeno produtor</td><td>Nenhum</td><td class="verde">Direto e justo</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><strong>Consumir próximo de casa</strong> fortalece a economia local, reduz poluição e garante alimentos mais frescos e saudáveis.</p>
+            </section>
+
+            <!-- SEÇÃO 3: CALCULADORA DE PEGADA VERDE (FUNCIONALIDADE JS) -->
+            <section id="calculadora">
+                <h2>📊 Calculadora da Pegada Verde</h2>
+                <p>Descubra o impacto ambiental positivo ao escolher alimentos da agricultura familiar perto de você!</p>
+
+                <!-- Formulário da calculadora -->
+                <div class="calc-card">
+                    <div class="campo">
+                        <label for="alimento">🍅 Escolha o alimento:</label>
+                        <select id="alimento">
+                            <option value="alface">Alface</option>
+                            <option value="tomate">Tomate</option>
+                            <option value="laranja">Laranja</option>
+                            <option value="mandioca">Mandioca</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="quantidade">⚖️ Quantidade (em kg):</label>
+                        <input type="number" id="quantidade" min="0.1" step="0.1" value="1">
+                    </div>
+
+                    <div class="campo">
+                        <label for="localizacao">📍 Sua cidade ou CEP (ex: São Paulo, 80000-000):</label>
+                        <input type="text" id="localizacao" placeholder="Ex: Curitiba, 80000-000">
+                    </div>
+
+                    <button id="calcularBtn">🌱 Calcular impacto positivo</button>
+
+                    <!-- RESULTADO DA SIMULAÇÃO -->
+                    <div id="resultado" class="resultado">
+                        <!-- O JavaScript exibirá o resultado aqui -->
+                    </div>
+                </div>
+
+                <p class="dica">* Simulação educativa: quanto menor a distância do produtor local, menor o CO₂ e mais árvores são "salvas" simbolicamente.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer>
+        <div class="container">
+            <p>🌱 Projeto Raiz e Futuro | Concurso Agrinho 2026</p>
+            <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO DE ACESSIBILIDADE (Fixo no canto) -->
+    <div class="acessibilidade">
+        <button id="aumentarFonte" aria-label="Aumentar fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir fonte">A-</button>
+        <button id="altoContraste" aria-label="Ativar alto contraste">🎨 Contraste</button>
+    </div>
+
+    <!-- ==================== SCRIPT ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
